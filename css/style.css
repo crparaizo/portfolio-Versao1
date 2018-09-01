@@ -5,18 +5,22 @@
 }
 
 .inicio {
-    background-image: url("../imagens/apple-black-and-white-computer-34579\ -\ Copia\ -\ Copia.png");
+    background-image: url("../imagens/black-and-white-blur-gray-34088\ -\ Copia.jpg");
     background-size: cover;
     width: 100%;
-    height: 624px;
+    height: 695px;
     justify-content:center;
     align-items: center;
     flex-direction: column;
     display: flex;
     font-size: 30px;
     color:#16a7a7;
-    text-shadow: 0 0 3px #000;
+    text-shadow:1px 0px 0px #000, 
+    -1px 0px 0px #000, 
+    0px 1px 0px #000, 
+    0px -1px 0px #000;   
 }
+
 .banner-text{
     padding: 0.5em 1em;
     text-align: center;
@@ -49,7 +53,8 @@
     color: #16a7a7;
     text-transform: uppercase;
     text-shadow: 0 0 2px #fff;
-    text-decoration: none;
+    text-decoration: none;   
+    text-shadow: 1px 0px 0px #000, -1px 0px 0px #000, 0px 1px 0px #000, 0px -1px 0px #000; 
 }
 
 .eu {
@@ -73,6 +78,12 @@
     text-align: center;
     font-size: 35px;
     padding: 30px;
+    text-transform: uppercase;
+    color: gray;
+    text-shadow:1px 0px 0px #000, 
+    -1px 0px 0px #000, 
+    0px 1px 0px #000, 
+    0px -1px 0px #000;   
 }
 
 #sobre p{
@@ -88,19 +99,23 @@
     height: 500px;
     text-align: center;
     color: #16a7a7;
-    border-right: dashed 3px rgba(127, 127, 127, 0.3);
+    border-right: dashed 3px #000;    
 }
 
 #foto img{
     max-width: 400px;
     max-height: 300px;
     width: auto;
-    height: auto;    
+    height: auto;  
+    border: black solid 15px;  
 }
 
 #foto h2{
     font-size: 30px;
-    padding: 17px;
+    padding: 25px;
+    text-transform: uppercase;
+    color: gray;
+    text-shadow: 1px 0px 0px #000, -1px 0px 0px #000, 0px 1px 0px #000, 0px -1px 0px #000;
 }
 
 .hey{
@@ -108,7 +123,7 @@
     /* justify-content: space-around; */
     margin: 50px 30px 30px 30px;
     font-size: 16.5px;
-    color: #16a7a7;
+    color: white;
     font-weight: bold;
     flex-direction: column;
     /* align-items: center; */
@@ -117,10 +132,14 @@
 }
 
 dd{
-    background-color: #000;
+    background-color: gray;
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 10px;
+    text-shadow:1px 0px 0px #000, 
+    -1px 0px 0px #000, 
+    0px 1px 0px #000, 
+    0px -1px 0px #000; 
 }
 
 .text-left {
@@ -152,8 +171,7 @@ dd{
     font-size: 25px;
     padding: 30px;
     color: #16a7a7;
-    text-shadow: 0 0 1px #000;
-    text-transform: uppercase;
+    text-transform: uppercase;    
 }
 
 #curiosidade p {
@@ -175,13 +193,15 @@ dd{
 #port h3{
     padding: 30px;
     margin-top: -25px;
+    color: #2954B6;
 }
 
 #port h2 {
     text-align: center;
     font-size: 25px;
     padding-top: 30px;
-    color: #FC067C;
+    color: #16a7a7;
+    text-transform: uppercase;
 }
 
 #port p {
@@ -189,26 +209,28 @@ dd{
     margin:  0 70px;
     font-size: 15px;
 }
+.port-img{
+    width: 500px;
+    height: auto;
+}
 
-.port-port{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
+.port-img img{
+    width: 50px;
+    height: 100px;
 }
 
 #contato{
     width: 100%;
     height: 515px;
-    background: rgba(127, 127, 127, 0.05);
+    background: #000;
 }
 
 #contato h2 {
     text-align: center;
     font-size: 25px;
     padding: 30px;
-    color: #FC067C;
+    color: #16a7a7;
+    text-transform: uppercase;
 }
 
 
@@ -216,17 +238,15 @@ dd{
     width: 100%;
     height: 340px;
     display: flex;
-    /* text-align: center; */
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
 }
 
 #forma h2 {
-    /* text-align: center; */
     font-size: 25px;
     padding-top: 30px;
-    color: #FC067C;
+    color: #16a7a7;
+    text-transform: uppercase;
 }
 
 #forma p {
@@ -247,7 +267,6 @@ dd{
     font-size: 25px;
     padding: 30px;
     color: #16a7a7;
-    text-shadow: 0 0 1px #fff;
     text-transform: uppercase;
 }
 
@@ -276,12 +295,13 @@ dd{
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    color: #2954B6;
 }
 
 .tudo .tp{
     flex: 2;  
     padding-left: 7%;
-    padding-top: 48px;
+    padding-top: 55px;
 }
 
 .tudo .lin{
@@ -290,8 +310,6 @@ dd{
     padding-left: 225px;
     padding-right: 50px;
 }
-
-
 
 .hello {
     display: flex;
@@ -350,6 +368,7 @@ dd{
 .contato-itens form input[type="button"] {
     width: 100px;
     margin: auto; 
+    color: #2954B6;
 }
 
 @media screen and (max-width: 420px) {
@@ -375,5 +394,10 @@ dd{
         padding: 0.4em;
     }
 }
+
+/* background: rgba(255, 255, 230, 0.3); */
+/* background: rgba(255, 200, 175, 0.3) */
+
+
 
 
